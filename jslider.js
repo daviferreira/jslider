@@ -34,10 +34,10 @@ JSliderStage.prototype.init = function (el) {
         return;
     }
 
-    this.buildStage();
+    this.build();
 };
 
-JSliderStage.prototype.buildStage = function () {
+JSliderStage.prototype.build = function () {
     this.setPageDimensions()
         .createStage()
         .initNavigation();

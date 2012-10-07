@@ -4,7 +4,6 @@
 
 .jslider-track {
     overflow: hidden;
-    border-radius: 0 12px;
 }
 
 .jslider-track ul {
@@ -44,7 +43,7 @@
 
 
 .jslider-navigation:hover {
-    background-color: #df0d32;
+    color: #df0d32;
 }
 
 .jslider-stage .left {
@@ -60,5 +59,6 @@
 .jslider-stage .off {
     opacity: 0.5;
     background: #ccc;
+    color: #ccc;
     cursor: default;
 }
