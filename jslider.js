@@ -38,7 +38,7 @@ JSliderStage.prototype.init = function (el) {
 };
 
 JSliderStage.prototype.build = function () {
-    this.setPageDimensions()
+    this.getPageDimensions()
         .createStage()
         .initNavigation();
     this.root.innerHTML = '';
@@ -46,7 +46,7 @@ JSliderStage.prototype.build = function () {
     this.currentPage = 1;
 };
 
-JSliderStage.prototype.setPageDimensions = function () {
+JSliderStage.prototype.getPageDimensions = function () {
     var i;
     this.pageWidth = this.pageHeight = 0;
     for (i = 0; i < this.images.length; i += 1) {
@@ -89,6 +89,8 @@ JSliderStage.prototype.loadImages = function () {
 
     for (i = 0; i < this.images.length; i += 1) {
         li = this.doc.createElement('li');
+        li.style.width = this.pageWidth + 'px';
+        li.style.height = this.pageHeight + 'px';
         li.appendChild(this.images[i]);
         this.imageList.appendChild(li);
     }
