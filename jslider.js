@@ -139,6 +139,13 @@ JSliderStage.prototype.gotoPage = function (page) {
         return;
     }
 
+    this.setNavigationState(page);
+
+    this.imageList.style.marginLeft = marginLeft + 'px';
+    this.currentPage = page;
+};
+
+JSliderStage.prototype.setNavigationState = function (page) {
     if (page === 1) {
         this.navButtonsList[0].classList.add('off');
         this.navButtonsList[1].classList.remove('off');
@@ -150,7 +157,4 @@ JSliderStage.prototype.gotoPage = function (page) {
             this.navButtonsList[1].classList.remove('off');
         }
     }
-
-    this.imageList.style.marginLeft = marginLeft + 'px';
-    this.currentPage = page;
 };
