@@ -1,0 +1,26 @@
+{
+  "name": "jslider",
+  "title": "Javascript Image Slider",
+  "description": "Javascript plugin to create a simple image slider.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/daviferreira/jslider/",
+  "author": {
+    "name": "Davi Ferreira",
+    "url": "http://daviferreira.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daviferreira/jslider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daviferreira/jslider/issues"
+  },
+  "licenses": [
+    {
+      "type": "THE BEER-WARE LICENSE",
+      "url": "https://fedoraproject.org/wiki/Licensing/Beerware"
+    }
+  ],
+  "dependencies": {},
+  "keywords": []
+}

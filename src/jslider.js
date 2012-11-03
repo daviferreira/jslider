@@ -43,7 +43,6 @@ JSliderStage.prototype.build = function () {
         .initNavigation();
     this.root.innerHTML = '';
     this.root.appendChild(this.stage);
-    this.currentPage = 1;
 };
 
 JSliderStage.prototype.getPageDimensions = function () {
