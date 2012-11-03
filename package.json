@@ -21,6 +21,8 @@
       "url": "https://fedoraproject.org/wiki/Licensing/Beerware"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "grunt-css": "*"
+  },
   "keywords": []
 }
