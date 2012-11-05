@@ -114,19 +114,19 @@ JSliderStage.prototype.initNavigation = function () {
 
 JSliderStage.prototype.createNavigationButton = function (direction, positionTop) {
     var navButton = this.doc.createElement('a'),
-        instance = this,
-        isLeft = (direction === 'left'),
+        self = this,
+        slidingLeft = (direction === 'left'),
         page;
 
-    navButton.className = 'jslider-navigation ' + direction + (isLeft ? ' off' : '');
+    navButton.className = 'jslider-navigation ' + direction + (slidingLeft ? ' off' : '');
     navButton.style.top = positionTop;
     navButton.href = '#';
-    navButton.innerHTML = (isLeft ? '&lsaquo;' : '&rsaquo;');
+    navButton.innerHTML = (slidingLeft ? '&lsaquo;' : '&rsaquo;');
 
     navButton.onclick = function (e) {
         e.preventDefault();
-        page = (isLeft ? instance.currentPage - 1 : instance.currentPage + 1);
-        instance.gotoPage(page);
+        page = (slidingLeft ? self.currentPage - 1 : self.currentPage + 1);
+        self.gotoPage(page);
     };
 
     this.stage.appendChild(navButton);
